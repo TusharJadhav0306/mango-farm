@@ -1,0 +1,110 @@
+.mango-varieties {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.varieties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.variety-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.variety-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #FFD700;
+}
+
+.variety-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.variety-name {
+  color: #2c5530;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.variety-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.harvest-time {
+  background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid #4CAF50;
+}
+
+.harvest-label {
+  display: block;
+  font-weight: 600;
+  color: #2c5530;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.harvest-date {
+  color: #4CAF50;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mango-varieties {
+    padding: 60px 0;
+  }
+  
+  .varieties-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .variety-card {
+    padding: 1.5rem;
+  }
+  
+  .variety-emoji {
+    font-size: 3rem;
+  }
+  
+  .variety-name {
+    font-size: 1.3rem;
+  }
+  
+  .variety-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .variety-card {
+    padding: 1rem;
+  }
+  
+  .variety-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .harvest-time {
+    padding: 0.8rem;
+  }
+}

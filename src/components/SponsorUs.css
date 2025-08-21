@@ -1,0 +1,159 @@
+.sponsor-us {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.sponsor-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.sponsor-info h3 {
+  color: #2c5530;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.sponsor-info h3:first-child {
+  margin-top: 0;
+}
+
+.sponsor-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.sponsor-benefits {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.sponsor-benefits li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.sponsor-benefits li:last-child {
+  border-bottom: none;
+}
+
+.sponsorship-levels {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.level {
+  background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+}
+
+.level h4 {
+  color: #2c5530;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.level p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sponsor-form {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-form h3 {
+  color: #2c5530;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sponsor-form p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c5530;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #45a049, #4CAF50);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sponsor-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .sponsor-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .sponsor-info p {
+    font-size: 1rem;
+  }
+  
+  .sponsor-form {
+    padding: 1.5rem;
+  }
+  
+  .sponsor-form h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-us {
+    padding: 60px 0;
+  }
+  
+  .sponsor-form {
+    padding: 1rem;
+  }
+  
+  .level {
+    padding: 1rem;
+  }
+}

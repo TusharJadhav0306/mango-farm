@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
+import MangoVarieties from './components/MangoVarieties';
+import Gallery from './components/Gallery';
+import SponsorUs from './components/SponsorUs';
+import ContactUs from './components/ContactUs';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (<div className="App">
+        <Navbar isMenuOpen={isMenuOpen}
+            toggleMenu={toggleMenu}/>
+        <Hero/>
+        <AboutUs/>
+        <MangoVarieties/>
+        <Gallery/>
+        <SponsorUs/>
+        <ContactUs/>
+    </div>);
 }
 
 export default App;
